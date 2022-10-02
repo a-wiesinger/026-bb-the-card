@@ -3,15 +3,15 @@ namespace _026_bb_the_card.Models;
 public class Card
 {
     // Properties
-    public string NumberOrSymbol
+    public string CardColor { get; }
+    public string CardRank { get; }
+
+// Constructor(s)
+    public Card(string cardColor, string cardRank)
     {
-        get
-        {
-            // TODO - Check the property of card for number or face
-            return "Result of above check";
-        }
+        CardColor = cardColor;
+        CardRank = cardRank;
     }
-    
     
     // Enumerations
     public enum CardColors
